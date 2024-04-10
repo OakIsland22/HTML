@@ -3,4 +3,9 @@ html{
     background-color: black;
     /* Se cambia el color de la letra */
     color:  white;
+
+    scroll-behavior: smooth;
+}
+img{
+    max-width: 100%;
 }
