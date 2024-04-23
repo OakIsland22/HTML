@@ -6,6 +6,33 @@ html{
 
     scroll-behavior: smooth;
 }
-img{
+img, video, iframe{
     max-width: 100%;
+}
+
+.text-orange{
+    color: rgb(123, 255, 0);
+    background-color: blue;
+}
+
+.button-return{
+    color: aqua;
+}
+
+.lista-enlaces{
+    color: rgb(166, 255, 0);
+}
+
+.lista-indice{
+    color: rgb(253, 121, 121);
+}
+
+.lista:hover, #ira:hover{
+    color: black;
+}
+
+.box{
+    border: black;
+    padding: 10px;
+    
 }

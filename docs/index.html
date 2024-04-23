@@ -10,7 +10,7 @@
     <!-- Se agrea una imagen en el nombre de la pagina -->
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/456/456212.png" />
     <!-- Se hace referencia a la carpeta de estilos -->
-    <link rel="stylesheet" href="/CSS/intro-css.css" />
+    <link rel="stylesheet" href="CSS/intro-css.css" />
 </head>
 <body>
     <!-- Intro -->
@@ -26,14 +26,14 @@
     <nav>
         <h3>
             <ul>
-                <li><a href="#Inicio">Ir a inicio</a></li>
-                <li><a href="#Encabezados">Ir a encabezados</a></li>
-                <li><a href="#Formatos">Ir a Formatos</a></li>
-                <li><a href="#citas">Formato de cita</a></li>
-                <li><a href="#Listas">Ir a listas</a></li>
-                <li><a href="#Tablas">Ir a tablas</a></li>
-                <li><a href="#enlaces">Ir a enlaces</a></li>
-                <li><a href="#audio">Ir a audio y video</a></li>
+                <li><a class="lista-indice lista" href="#Inicio">Ir a inicio</a></li>
+                <li><a class="lista-indice lista" href="#Encabezados">Ir a encabezados</a></li>
+                <li><a class="lista-indice lista" href="#Formatos">Ir a Formatos</a></li>
+                <li><a class="lista-indice lista" href="#citas">Formato de cita</a></li>
+                <li><a class="lista-indice lista" href="#Listas">Ir a listas</a></li>
+                <li><a class="lista-indice lista" href="#Tablas">Ir a tablas</a></li>
+                <li><a class="lista-indice lista" href="#enlaces">Ir a enlaces</a></li>
+                <li><a class="lista-indice lista" href="#audio">Ir a audio y video</a></li>
             </ul>
         </h3>
     </nav>
@@ -49,7 +49,7 @@
         <h5>Encabezado de nivel 5</h5>
         <h6>Encabezado de nivel 6</h6>
     
-        <a href="#Inicio">Ir a inicio 👆</a>
+        <a id="ira" class="button-return" href="#Inicio">Ir a inicio 👆</a>
     </section>
     <hr>
     <!-- Formato -->
@@ -69,7 +69,7 @@
         La formula de la relatividad introducida por Eintein es E=mc<sup>2</sup>
         <br>
         <br>
-        <a href="#Inicio">Ir a inicio 👆</a>
+        <a id="ira" class="button-return" href="#Inicio">Ir a inicio 👆</a>
     </section>
     <hr>
     <!-- Citas -->
@@ -82,7 +82,7 @@
     </blockquote>
     <br>
     <br>
-    <a href="#Inicio">Ir a inicio 👆</a>
+    <a id="ira" class="button-return" href="#Inicio">Ir a inicio 👆</a>
     </section>
     <hr>
     <!-- Listas -->
@@ -128,7 +128,7 @@
             </ol>
         </ol>
         <br>
-        <a href="#Inicio">Ir a inicio 👆</a>
+        <a class="button-return" href="#Inicio">Ir a inicio 👆</a>
     </section>
     <hr>
     <!-- Tablas -->
@@ -153,22 +153,26 @@
             </tr>
         </table>
         <br>
-        <a href="#Inicio">Ir a inicio 👆</a>
+        <a class="button-return" href="#Inicio">Ir a inicio 👆</a>
     </section>
     <hr>
     <!-- Enlaces -->
     <section>
         <h2 id="enlaces">Enlaces</h2>
         <!-- Ir a oto documento HTML -->
-        <a href="/HTML/docs/otro.html">Ir a otro documenro</a>
+        <a class="lista-enlaces" href="/HTML/docs/otro.html">Ir a otro documenro</a>
         <br>
-        <a href="https://www.youtube.com" target="_blank">Ir a Youtube</a>
         <br>
-        <a href="mailto: cdmx2539@amerike.edu.mx">cdmx2539@amerike.edu.mx</a>
+        <a class="lista-enlaces" href="https://www.youtube.com" target="_blank">Ir a Youtube</a>
         <br>
-        <a href="tel:55821312">552784E12973</a>
         <br>
-        <a href="#Inicio">Ir a inicio 👆</a>
+        <a class="lista-enlaces" href="mailto: cdmx2539@amerike.edu.mx">cdmx2539@amerike.edu.mx</a>
+        <br>
+        <br>
+        <a class="lista-enlaces" href="tel:55821312">552784E12973</a>
+        <br>
+        <br>
+        <a class="button-return" href="#Inicio">Ir a inicio 👆</a>
     </section>
     <hr>
     <!-- imagenes -->
@@ -177,7 +181,7 @@
         <img src="https://img.freepik.com/foto-gratis/retrato-abstracto-ojo-elegancia-mujeres-jovenes-generado-ai_188544-9712.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1712707200&semt=ais" alt="Imagen ojo">
         <script src="/Js/intro-js.js"></script>
         <br>
-        <a href="#Inicio">Ir al inicio 👆</a>
+        <a class="button-return" href="#Inicio">Ir al inicio 👆</a>
     </section>
     <hr>
     <!-- Audio -->
@@ -187,7 +191,7 @@
         <audio src="" controls preload="auto">No es compatible</audio>
         <video src="" controls preload="auto">No es compatible</video>
         <br>
-        <a href="#Inicio">Ir al inicio</a>
+        <a class="button-return" href="#Inicio">Ir al inicio</a>
     </section>
     <hr>
     <!-- Enlaces -->
@@ -197,9 +201,9 @@
         <h3>Documento pdf</h3>
         <iframe
         width="100%" height="600px" 
-        src="/Documentos/ProgramacionLenguajesInterpretados.pdf" frameborder="0"></iframe>
+        src="Documentos/ProgramacionLenguajesInterpretados.pdf" frameborder="0"></iframe>
         <br>
-        <a href="#Inicio">Ir al inicio 👆</a>    
+        <a class="button-return" href="#Inicio">Ir al inicio 👆</a>    
         
         <h3>Video de Youtube</h3>
         <iframe width="560" height="315" 
@@ -207,13 +211,13 @@
         title="YouTube video player" frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <br>
-        <a href="#Inicio">Ir al inicio 👆</a>
+        <a class="button-return" href="#Inicio">Ir al inicio 👆</a>
     
     
         <h3>Google Maps</h3>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7527.694962252679!2d-99.15701494733953!3d19.375755621419216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff82b342aee3%3A0x93244993291fd0cc!2sUniversidad%20Amerike%20Campus%20CDMX!5e0!3m2!1ses!2smx!4v1713283365125!5m2!1ses!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <br>
-        <a href="#Inicio">Ir al inicio 👆</a>
+        <a class="button-return" href="#Inicio">Ir al inicio 👆</a>
         <!-- para todo esto se va al o que se quiere y se presiona en compartir -->
     </section>
     <hr>
@@ -229,8 +233,19 @@
         <article>Esto es un article</article>
         <section>Esto es una section</section>
         <footer>Esto es un footer</footer>
-        <a href="#Inicio">Ir al inicio 👆</a>
+        <a class="button-return" href="#Inicio">Ir al inicio 👆</a>
+    </section>
+    <hr>
+    <section>
+        <h2 id="css"> Introduccion a css</h2>
+        <p class="text-orange">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat officia praesentium, quaerat sequi eaque odio aspernatur fugit aperiam. Quae architecto, harum voluptatibus omnis repudiandae unde natus vero excepturi sapiente sit.
+        </p>
     </section>
 
+    <section>
+        <h2 id="box">Cajas de linea</h2>
+        <div class="box">Caja de linea</div>
+    </section>
 </body>
 </html>
