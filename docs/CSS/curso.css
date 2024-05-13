@@ -1,0 +1,29 @@
+/* Links de pagina*/
+
+
+/* Cuando ya fue visitad0 */
+a:visited{
+    color: blue;
+}
+
+/* Cuando nos ponemos enciam del link */
+.ponemos-encima:hover{
+    color: blueviolet;
+}
+
+/* Quitar linea del link */
+.quitar-line-link{
+    text-decoration: none;
+}
+
+/* Poner linea del link */
+.poner-line-link{
+    text-decoration: underline;
+}
+
+/* Cuando se preciona el link */
+.precionar-link:active{
+    color: brown;
+    /* Poner lina de abajo del link */
+    text-decoration: underline;
+}
